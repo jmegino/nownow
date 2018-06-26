@@ -15,6 +15,7 @@ html, body {
 .percent-count{
     margin: 10px auto;
     font-size: 24px;
+    font-weight: bold;
 }
 
 .progress-bar{

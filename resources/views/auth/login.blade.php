@@ -20,11 +20,12 @@
 
                                 <div class="col-lg-5 col-lg-offset-5 col-centered">
                                     <input id="identity" type="identity" class="form-control{{ $errors->has('identity') ? ' is-invalid' : '' }}" name="identity"
-                                        value="{{ old('identity') }}" required autofocus placeholder="Username">                                    {{-- @if ($errors->has('identity'))
+                                        value="{{ old('identity') }}" required autofocus placeholder="Username">
+                                    {{-- @if ($errors->has('identity'))
                                     <div class="invalid-feedback" role="alert">
                                         <strong>{{ $errors->first('identity') }}</strong>
                                     </div>
-                                    @endif --}} 
+                                    @endif --}}
                                 </div>
                                 {{-- </div> --}}
                         </div>
@@ -43,7 +44,7 @@
 
 
                         <div class="form-group row mb-0">
-                            <div class="col-centered-button  ">
+                            <div class="col-centered-button col-lg-5 col-lg-offset-5">
                                 <button type="submit" class="btn btn-success btn-md btn-block btn-circle">
                                     {{ __('LOGIN') }}
                                 </button> {{-- <a class="btn btn-link" href="{{ route('password.request') }}">
