@@ -31,7 +31,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    <img src="../img/ui-sam.png" alt="">
+                    <img src="../img/ui-sam.png" alt="Pic">
                 </div>
 
 

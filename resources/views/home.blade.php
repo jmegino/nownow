@@ -4,7 +4,7 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
-            <div class="card">
+            {{--<div class="card">--}}
                 <div class="card-header">Dashboard</div>
 
                 <div class="card-body">
@@ -14,9 +14,45 @@
                         </div>
                     @endif
 
-                    You are logged in!
                 </div>
-            </div>
+
+            <section class="content">
+                <div class="container-fluid">
+                    <div class="block-header">
+                        <h1>User Registration Approval</h1>
+                    </div>
+                    <!--   <div class="buttons">
+                          <div class="button1">
+                          <button onclick="myFunction()">Click me</button>
+                          </div>
+
+                          <div class="button2">
+                          <button onclick="myFunction()">Click me</button>
+                          </div>
+
+                          <div class="button3">
+                          <button onclick="myFunction()">Click me</button>
+                          </div>
+
+                          </div>
+           -->
+                    <nav class="buttons">
+                        <div class="button1">
+                            <button type="button" class="btn btn-primary btn-lg"> <i class="material-icons">chat</i>Large</button>
+                        </div>
+                        <div class="button2">
+                            <button type="button" class="btn btn-primary btn-lg">Large</button>
+                        </div>
+                        <div class="button3">
+                            <button type="button" class="btn btn-primary btn-lg">Large</button>
+                        </div>
+                    </nav>
+
+                </div>
+            </section>
+
+
+            {{--</div>--}}
         </div>
     </div>
 </div>

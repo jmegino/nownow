@@ -43,7 +43,7 @@ function check_element(ele)
     {
         var prog_width=per_inc+Number(document.getElementById("progress_width").value);
         document.getElementById("progress_width").value=prog_width;
-        $("#progress").animate({width:prog_width+"%"},10,function(){
+        $("#progress").animate({width:prog_width+"%"},75,function(){
             if(document.getElementById("progress").style.width=="100%")
             {
                 $(".progress-bar").fadeOut("slow");

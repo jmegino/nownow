@@ -5,6 +5,9 @@ namespace App\Http\Controllers\Auth;
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Input;
+use Illuminate\Support\Facades\Redirect;
 use Illuminate\Validation\ValidationException;
 
 class LoginController extends Controller
@@ -55,6 +58,7 @@ class LoginController extends Controller
      * @param Request $request
      */
     protected function validateLogin(Request $request){
+
         $this->validate(
             $request,
             [
@@ -66,10 +70,47 @@ class LoginController extends Controller
                 'password.required' => 'Password is required',
             ]
         );
-        // dd(request()->all());
+
+//        // dd(request()->all());
     }
 
-     /**
+//    public function validateLogin(){
+//
+//        $remember = (Input::has('remember')) ? true : false;
+//
+//        $auth = Auth::attempt(
+//            [
+//                'username' => strtolower(Input::get('username')),
+//                'password' => Input::get('password')
+//            ], $remember
+//        );
+//
+//        if ($auth){
+//            return Redirect::to('home');
+//        }else{
+//            return Redirect::to('/')
+//                ->withInput(Input::except('password'))
+//                ->with('flash_notice', "Mali pre");
+//        }
+//    }
+
+    /**
+     * Log the user out of the application.
+     *
+     * @param \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function logout(Request $request)
+    {
+        $this->guard()->logout();
+//        Auth::logout();
+        $request->session()->flush();
+        $request->session()->regenerate();
+        return redirect('/login');
+    }
+
+
+    /**
      * @param Request $request
      * @throws ValidationException
      */
@@ -82,7 +123,7 @@ class LoginController extends Controller
         );
     }
 
-    
+
 
 
 }

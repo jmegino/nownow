@@ -2,17 +2,17 @@
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-8">
+        <div class="col-md-6">
             {{--
             <div class="card"> --}} {{--
                 <div class="card-header">{{ __('Login') }}</div> --}}
                 {{-- nownow logo --}}
                 {{-- <img src="../img/ui-sam.png" alt=""> --}}
                 <div class="card-body">
-                    <h2 class="text-center">Management Screen</h2>
+                    <h1 class="text-center">Management Screen</h1>
 
                     <form method="POST" action="{{ route('login') }}" aria-label="{{ __('Login') }}">
-                        @csrf
+                        {{csrf_field()}}
                         <div class="messages"></div>
                         <div class="form-group row">
                             {{--
@@ -53,12 +53,12 @@
                             </div>
                         </div>
 
-                        <div class="form-group row">
-                            <div class="col-lg-6 offset-lg-3">
+                        <div class="form-group row ">
+                            <div class="col-lg-6 offset-lg-3 position-relative">
 
-                                <label class="custom-control custom-checkbox">
-                                    <input type="checkbox" name="check" > 
-                                    <span class="label-text">Remember Me</span>
+                                <label class="pull-left">
+                                    <input type="checkbox" name="remember" {{old('remember') ? 'checked' : ''}}>
+                                    <span class="label-text position-absolute">{{__('Remember Me')}}</span>
                                 </label> {{--
                                 <div class="checkbox">
                                     <input type="checkbox" name="remember" {{ old( 'remember') ? 'checked' : '' }}>

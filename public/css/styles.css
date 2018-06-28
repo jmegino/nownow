@@ -1,8 +1,8 @@
 @import "https://use.fontawesome.com/releases/v5.1.0/css/all.css";
 
-div.card-body>h2.text-center {
+div.card-body>.text-center {
     color: gray;
-    margin: 100px 0 60px 0;
+    margin: 200px 0 60px 0;
 }
 
 .form-control{
@@ -26,6 +26,25 @@ div.card-body>h2.text-center {
     
 }
 
+::-webkit-input-placeholder {
+    font-size: 11px !important;
+}
+
+input[type="identity"],
+input[type="password"] {
+    font-size: 11px;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+    font-size: 11px!important;
+
+}
+::-moz-placeholder {  /* Firefox 19+ */
+    font-size: 13px!important;
+
+}
+
+
 .btn-circle {
     /* width: 30px;
     height: 30px; */
@@ -36,11 +55,16 @@ div.card-body>h2.text-center {
     border-radius: 15px;
   }
 
+.btn{
+    font-size: 14px;
+}
+
   input#identity,
   input#password,
   label>input{
       background-color: #666;
       color: white;
+      padding-left: 15px;
   }
 
   .form-control::placeholder{
@@ -53,32 +77,35 @@ div.card-body>h2.text-center {
 label{
     cursor: pointer;
     color: #666;
+    font-size: 12px;
 }
 
 input[type="checkbox"]{ 
     display:none
 }
 
+span.label-text{
+    left: 30px;
+    top: 10px;
+}
+
 input[type="checkbox"]+ .label-text:before{
     content:"\f05d";
     font-family:"FontAwesome";
     speak:none;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 25px;
-    font-variant: normal;
-    text-transform: none;
+    font-size: 20px;
     line-height: 1;
     -webkit-font-smoothing:antialiased;
-    width: 1em;
+    /*width: 1em;*/
     display: inline-block;
-    margin: 10px;
+    margin: 4px 3px;
 }
 
 input[type="checkbox"]:checked + .label-text:before{
     content: "\f058";
     color: #666;
 }
+
 
 /*Autofill*/
 
