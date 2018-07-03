@@ -1,0 +1,166 @@
+/*.navbar-brand{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    text-align: center;
+    margin: auto;
+}
+*/
+@media screen and (min-width:768px){
+    .navbar-brand-centered {
+        position: absolute;
+        left: 50%;
+        display: block;
+        width: 160px;
+        text-align: center;
+        /*background-color: #eee;*/
+        font-size: 26px;
+    }
+    .navbar>.container .navbar-brand-centered,
+    .navbar>.container-fluid .navbar-brand-centered {
+        margin-left: -80px;
+    }
+}
+
+.nav > li:first-child{
+    margin-bottom: 9%;
+}
+
+.sidebar{
+    background: #4a4a4a;
+}
+
+.label-count{
+    background-color: #ed2827;
+}
+
+.sidebar .menu .list i.material-icons {
+margin-top: 7px;
+
+}
+
+.material-icons{
+    font-size: 32px;
+}
+
+.sidebar .menu .list a span{
+    margin: 7px 0 7px 12px;
+    color: #ffffff;
+    font-weight: lighter;
+    font-size: 19px;
+}
+
+.sidebar .menu .list a:hover{
+    background-color: #565f70;
+}
+
+.block-header h1 {
+    margin: 3% !important;
+    color: #3d73ad !important;
+    font-weight: normal;
+
+}
+
+.info-box .content .text {
+    font-size: 20px;
+    margin-top: 0px;
+
+}
+
+.bg-white .content .number,
+.info-box .icon i {
+    color: #1d8355 !important;
+}
+
+.bg-white .content .text{
+    color: #313439 !important;
+}
+
+.btn:not(.btn-link):not(.btn-circle) {
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.container-fluid div.header{
+    background-color: #4399d3;
+    /*font-size: 20px;*/
+    /*padding: 3%;*/
+    height: 10rem;
+    margin-top: 2%;
+}
+
+.container-fluid > .content{
+    background-color: #ffffff;
+    /*font-size: 20px;*/
+    height: 380px;
+    padding: 30px;
+}
+
+/*.container-fluid > .row > div > button {*/
+    /*margin-bottom: 20px;*/
+/*}*/
+
+.search-box{
+    margin-top: 1.5%;
+    position: absolute;
+}
+.search-box input{
+    border: none;
+    background: none;
+    z-index: 1;
+    width: 25px;
+    transition: all .25s ease-in .25s;
+    color: transparent;
+    font-size:1em;
+    line-height: 25px;
+}
+
+.search-box input:hover{
+    cursor: pointer;
+}
+.search-box input:hover:focus{
+    cursor: text;
+}
+.search-box input:hover + span{
+    background: rgba(255, 255, 255,.2);
+}
+.search-box input:focus{
+    width: 200px;
+    padding: 0 10px;
+    outline:none;
+    color: black;
+    background: none;
+    color: #fff;
+}
+.search-box input:focus + span{
+    width: 200px;
+}
+.search-box input:focus + span::before{
+    width: 2px;
+    opacity: 0;
+    transition:all .25s ease-in;
+}
+.search-box input+ span{
+    z-index: -1;
+    position: absolute;
+    border: 2px solid #fff;
+    top:0;
+    width: 25px;
+    height: 25px;
+    transition:all .25s ease-in .25s;
+    border-radius:25px;
+    left:0;
+
+}
+.search-box input + span::before {
+    transition:all .25s ease-in .25s;
+    transform-origin: left top;
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 5px;
+    border-radius: 5px;
+    background: #fff;
+    transform: rotate(45deg) translate(26px, -2px);
+}
