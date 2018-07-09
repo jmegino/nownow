@@ -104,14 +104,15 @@
 
 <!-- Demo Js -->
 <script src="{{asset('js/demo.js')}}"></script>
+<script src="{{asset('js/script.js')}}"></script>
 
-<script>
-    $('.item-nav').click(function (event) {
-        event.preventDefault();
-        // alert("Hello");
-        $('section.content').load($(this).attr('href'));
-    });
-</script>
+{{--<script>--}}
+    {{--$('.item-nav').click(function (event) {--}}
+        {{--event.preventDefault();--}}
+        {{--// alert("Hello");--}}
+        {{--$('section.content').load($(this).attr('href'));--}}
+    {{--});--}}
+{{--</script>--}}
 </body>
 
 </html>

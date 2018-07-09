@@ -75,8 +75,41 @@
             <div class="header">
                 &nbsp;
             </div>
-            <div class="content">
-                content goes here
+            <div class="content pre-scrollable">
+
+                <button type="button" class="btn btn-primary btn-add m-0 add_field_button">Add</button>
+
+                <div class="container-fluid input_fields_wrap">
+
+                    <hr>
+
+                    <div class="col-lg-2">
+
+                        <span>release date</span>
+                        <div class="date">2018/01/17 &nbsp;00:00:00</div>
+                        <div class="btn-group" data-toggle="buttons">
+                            <label class="btn btn-primary active inactive ">
+                                <input type="radio" name="options" id="option1" autocomplete="off" checked/> open
+                            </label>
+                            <label class="btn btn-primary inactive">
+                                <input type="radio" name="options" id="option2"> not open
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-7">
+                        <textarea name="transmission" id="inputlg" cols="30" rows="10" class="form-control input-lg"></textarea>
+                            {{--<input class="form-control input-lg" id="inputlg" type="text">--}}
+                    </div>
+
+                    <div class="col-lg-3 align-center">
+                        <button class="btn btn-primary">Approve</button>
+                        <button class="btn btn-danger">Delete</button>
+                    </div>
+
+                </div>
+
+
             </div>
         </div>
     </section>

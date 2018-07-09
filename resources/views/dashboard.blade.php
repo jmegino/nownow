@@ -77,7 +77,117 @@
                 &nbsp;
             </div>
             <div class="content">
-                content goes here
+                <div class="row">
+                    <div class="pre-scrollable">
+                        {{--@foreach($penuser as $pend)--}}
+
+                        <div class="col-lg-15 col-md-3 col-sm-4 col-xs-12 text-center">
+                            {{--<img src="/img/{{$pend->profile_image}}" class="img-circle " alt="picture" width="50"--}}
+                            <img src="{{asset('img/user.jpg')}}" class="img-circle " alt="picture" width="100"
+                                 height="100" class="img-responsive"><br>
+                            {{--                                <span>{{$pend['name']}}</span><br>--}}
+                            <span>Name</span><br>
+
+                            {{--<a href="{{action('HomeController@edit', $pend['id'])}}"--}}
+                            <a href="#"
+                               class="btn btn-warning">Approve</a></td>
+                            <button class="btn btn-danger" type="submit">Delete</button>
+                        </div>
+                        <div class="col-lg-15 col-md-3 col-sm-4 col-xs-12 text-center">
+                            {{--<img src="/img/{{$pend->profile_image}}" class="img-circle " alt="picture" width="50"--}}
+                            <img src="{{asset('img/user.jpg')}}" class="img-circle " alt="picture" width="100"
+                                 height="100" class="img-responsive"><br>
+                            {{--                                <span>{{$pend['name']}}</span><br>--}}
+                            <span>Name</span><br>
+
+                            {{--<a href="{{action('HomeController@edit', $pend['id'])}}"--}}
+                            <a href="#"
+                               class="btn btn-warning">Approve</a></td>
+                            <button class="btn btn-danger" type="submit">Delete</button>
+                        </div>
+                        <div class="col-lg-15 col-md-3 col-sm-4 col-xs-12 text-center">
+                            {{--<img src="/img/{{$pend->profile_image}}" class="img-circle " alt="picture" width="50"--}}
+                            <img src="{{asset('img/user.jpg')}}" class="img-circle " alt="picture" width="100"
+                                 height="100" class="img-responsive"><br>
+                            {{--                                <span>{{$pend['name']}}</span><br>--}}
+                            <span>Name</span><br>
+
+                            {{--<a href="{{action('HomeController@edit', $pend['id'])}}"--}}
+                            <a href="#"
+                               class="btn btn-warning">Approve</a></td>
+                            <button class="btn btn-danger" type="submit">Delete</button>
+                        </div>
+                        <div class="col-lg-15 col-md-3 col-sm-4 col-xs-12 text-center">
+                            {{--<img src="/img/{{$pend->profile_image}}" class="img-circle " alt="picture" width="50"--}}
+                            <img src="{{asset('img/user.jpg')}}" class="img-circle " alt="picture" width="100"
+                                 height="100" class="img-responsive"><br>
+                            {{--                                <span>{{$pend['name']}}</span><br>--}}
+                            <span>Name</span><br>
+
+                            {{--<a href="{{action('HomeController@edit', $pend['id'])}}"--}}
+                            <a href="#"
+                               class="btn btn-warning">Approve</a></td>
+                            <button class="btn btn-danger" type="submit">Delete</button>
+                        </div>
+                        <div class="col-lg-15 col-md-3 col-sm-4 col-xs-12 text-center">
+                            {{--<img src="/img/{{$pend->profile_image}}" class="img-circle " alt="picture" width="50"--}}
+                            <img src="{{asset('img/user.jpg')}}" class="img-circle " alt="picture" width="100"
+                                 height="100" class="img-responsive"><br>
+                            {{--                                <span>{{$pend['name']}}</span><br>--}}
+                            <span>Name</span><br>
+
+                            {{--<a href="{{action('HomeController@edit', $pend['id'])}}"--}}
+                            <a href="#"
+                               class="btn btn-warning">Approve</a></td>
+                            <button class="btn btn-danger" type="submit">Delete</button>
+                        </div>
+                        <div class="col-lg-15 col-md-3 col-sm-4 col-xs-12 text-center">
+                            {{--<img src="/img/{{$pend->profile_image}}" class="img-circle " alt="picture" width="50"--}}
+                            <img src="{{asset('img/user.jpg')}}" class="img-circle " alt="picture" width="100"
+                                 height="100" class="img-responsive"><br>
+                            {{--                                <span>{{$pend['name']}}</span><br>--}}
+                            <span>Name</span><br>
+
+                            {{--<a href="{{action('HomeController@edit', $pend['id'])}}"--}}
+                            <a href="#"
+                               class="btn btn-warning">Approve</a></td>
+                            <button class="btn btn-danger" type="submit">Delete</button>
+                        </div>
+                        <div class="col-lg-15 col-md-3 col-sm-4 col-xs-12 text-center">
+                            {{--<img src="/img/{{$pend->profile_image}}" class="img-circle " alt="picture" width="50"--}}
+                            <img src="{{asset('img/user.jpg')}}" class="img-circle " alt="picture" width="100"
+                                 height="100" class="img-responsive"><br>
+                            {{--                                <span>{{$pend['name']}}</span><br>--}}
+                            <span>Name</span><br>
+
+                            {{--<a href="{{action('HomeController@edit', $pend['id'])}}"--}}
+                            <a href="#"
+                               class="btn btn-warning">Approve</a></td>
+                            <button class="btn btn-danger" type="submit">Delete</button>
+                        </div>
+                        <div class="col-lg-15 col-md-3 col-sm-4 col-xs-12 text-center">
+                            {{--<img src="/img/{{$pend->profile_image}}" class="img-circle " alt="picture" width="50"--}}
+                            <img src="{{asset('img/user.jpg')}}" class="img-circle " alt="picture" width="100"
+                                 height="100" class="img-responsive"><br>
+                            {{--                                <span>{{$pend['name']}}</span><br>--}}
+                            <span>Name</span><br>
+
+                            {{--<a href="{{action('HomeController@edit', $pend['id'])}}"--}}
+                            <a href="#"
+                               class="btn btn-warning">Approve</a></td>
+                            <button class="btn btn-danger" type="submit">Delete</button>
+                        </div>
+
+
+
+                        {{--@endforeach--}}
+
+
+                    </div>
+                    </tbody>
+                    </table>
+
+                </div>
             </div>
         </div>
     </section>
