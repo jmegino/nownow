@@ -41,4 +41,9 @@ class HomeController extends Controller
         return view('transmission_history');
 
     }
+
+    public function showMember()
+    {
+        return view('individual_members');
+    }
 }

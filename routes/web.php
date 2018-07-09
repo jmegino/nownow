@@ -24,3 +24,9 @@ Route::get('/dashboard', 'HomeController@index');
 Route::get('/membersearch', 'HomeController@memberSearch');
 
 Route::get('/transmissionhist', 'HomeController@transmissionHistory');
+
+//New Controllers
+
+Route::get('/membersearch/show', 'HomeController@showMember');
+
+Route::get('/phpfirebase_sdk', 'FirebaseController@index');
